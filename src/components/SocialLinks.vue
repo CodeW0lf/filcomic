@@ -5,7 +5,7 @@
         :href="shareUrl"
         @click="twitterClick"
         target="_blank"
-        class="text-gray-400 group-hover:text-white text-sm"
+        class="text-gray-800 group-hover:text-primary-lighter text-sm"
       >
         <svg
           class="fill-current text-twitter group-hover:text-twitter-lighter inline-block w-4 h-4 align-text-top"
@@ -21,10 +21,10 @@
         Share
       </a>
     </div>
-    <div class="mt-8 text-gray-400 text-center">Follow for Updates!</div>
+    <div class="mt-8 text-gray-800 text-center">Follow for Updates!</div>
     <div class="mt-4 mx-auto text-center">
       <a
-        href="https://t.me/ComicSlayers"
+        href="https://t.me/"
         @click="telegramClick"
         target="_blank"
         class="telegram"
@@ -35,14 +35,14 @@
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
-          <title>Telegram Join @ComicSlayers</title>
+          <title>Telegram Join ???</title>
           <path
             d="M23.91 3.79L20.3 20.84c-.25 1.21-.98 1.5-2 .94l-5.5-4.07-2.66 2.57c-.3.3-.55.56-1.1.56-.72 0-.6-.27-.84-.95L6.3 13.7l-5.45-1.7c-1.18-.35-1.19-1.16.26-1.75l21.26-8.2c.97-.43 1.9.24 1.53 1.73z"
           />
         </svg>
       </a>
       <a
-        href="https://twitter.com/ComicSlayers"
+        href="https://twitter.com/foxes_in_love"
         @click="twitterClick"
         target="_blank"
         class="twitter"
@@ -53,17 +53,13 @@
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <title>Twitter Follow @ComicSlayers</title>
+          <title>Twitter Follow @Foxes_in_Love</title>
           <path
             d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"
           />
         </svg>
       </a>
-      <a
-        href="https://discord.gg/HKZmH3U"
-        @click="discordClick"
-        target="_blank"
-      >
+      <a href="" @click="discordClick" target="_blank">
         <svg
           class="fill-current text-discord hover:text-discord-lighter inline-block w-8 h-8 mx-2"
           role="img"
@@ -77,34 +73,12 @@
         </svg>
       </a>
     </div>
-    <div class="mt-8 text-center">
-      <a
-        href="http://www.topwebcomics.com/vote/26458"
-        @click="voteClick"
-        target="_blank"
-      >
-        <img
-          class="mx-auto"
-          :src="voteImgRollover"
-          @mouseover="voteImgHover = true"
-          @mouseleave="voteImgHover = false"
-          alt="Vote for God Slayers Comic at TopWebComics"
-        />
-      </a>
-    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'SocialLinks',
-  data() {
-    return {
-      voteImgHover: false,
-      voteImg: require('@/assets/vote-twc.png'),
-      voteImgO: require('@/assets/vote-twc-o.png'),
-    }
-  },
   methods: {
     discordClick() {
       // eslint-disable-next-line no-undef
@@ -126,17 +100,14 @@ export default {
   computed: {
     shareUrl() {
       let message = encodeURIComponent(
-        'Check out God Slayers Comic (@ComicSlayers)!'
+        'Check out Foxes in Love(@foxes_in_love)!'
       )
       return (
-        'https://twitter.com/intent/tweet?url=https://www.godslayerscomic.com' +
+        'https://twitter.com/intent/tweet?url=https://www.foxesinlove.net' +
         this.$route.path +
         '&text=' +
         message
       )
-    },
-    voteImgRollover() {
-      return this.voteImgHover ? this.voteImgO : this.voteImg
     },
   },
 }

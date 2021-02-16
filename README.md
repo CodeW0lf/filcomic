@@ -1,5 +1,5 @@
-# god-slayers-comic
-https://www.godslayerscomic.com
+# Foxes in Love Comic
+https://www.foxesinlove.net
 
 ## Project setup
 ```

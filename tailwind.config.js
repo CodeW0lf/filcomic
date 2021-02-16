@@ -19,8 +19,8 @@ module.exports = {
           lighter: '#F96854',
         },
         primary: {
-          DEFAULT: '#3B9C7D',
-          lighter: '#57e7b9',
+          DEFAULT: '#5b80bd',
+          lighter: '#8099c2',
         },
         discord: {
           DEFAULT: '#7289da',
@@ -35,19 +35,6 @@ module.exports = {
           lighter: '#99aab5',
         },
       },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            color: theme('colors.gray.400'),
-            h1: {
-              color: theme('colors.gray.500'),
-            },
-            h2: {
-              color: theme('colors.gray.500'),
-            },
-          },
-        },
-      }),
     },
   },
   variants: {

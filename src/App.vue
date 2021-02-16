@@ -4,7 +4,7 @@
       <img
         class="w-screen"
         src="./assets/title_banner.png"
-        alt="God Slayers Comic"
+        alt="Foxes in Love"
       />
       <a href="#" v-scroll-to="'#top'">
         <svg
@@ -27,7 +27,7 @@
       <site-nav></site-nav>
       <router-view />
       <social-links></social-links>
-      <footer class="text-gray-400 mt-16 text-center py-2">
+      <footer>
         <site-footer />
       </footer>
     </div>

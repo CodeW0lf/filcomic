@@ -3,10 +3,10 @@
     class="flex flex-col justify-center items-center mb-2 sm:flex-row md:mb-0"
   >
     <a
-      href="https://www.patreon.com/elitetrick"
+      href="https://www.patreon.com/foxesinlove"
       @click="patreonClick"
       target="_blank"
-      class="inline-block py-2 px-3 bg-patreon-lighter text-white rounded text-xs sm:text-sm hover:ring-2 hover:ring-patreon hover:ring-offset-2 hover:ring-offset-black active:bg-gray-700"
+      class="inline-block py-2 px-3 bg-patreon-lighter text-white rounded text-xs sm:text-sm hover:ring-2 hover:ring-patreon-lighter hover:ring-offset-2 hover:ring-offset-gray-200 active:bg-gray-700"
     >
       <svg
         class="fill-current inline-block w-4 h-4 align-middle"
@@ -22,7 +22,7 @@
       Become a Patron
     </a>
     <span
-      class="text-gray-600 font-semibold inline-block animated bounceIn delay-1s text-sm mt-2 sm:mt-0 sm:ml-2 sm:text-base"
+      class="text-primary font-semibold inline-block animated bounceIn delay-1s text-sm mt-2 sm:mt-0 sm:ml-2 sm:text-base"
     >
       <svg
         class="fill-current w-5 h-5 mx-1 align-text-top hidden sm:inline-block"
@@ -33,7 +33,7 @@
           d="M3.828 9l6.071-6.071-1.414-1.414L0 10l.707.707 7.778 7.778 1.414-1.414L3.828 11H20V9H3.828z"
         />
       </svg>
-      Read the next 5 comics for only $1!
+      Support Foxes in Love!
     </span>
   </div>
 </template>

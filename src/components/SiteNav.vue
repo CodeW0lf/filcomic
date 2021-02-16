@@ -4,18 +4,14 @@
   >
     <patreon-link></patreon-link>
     <div class="mt-2 md:mt-0 text-size-md text-primary font-bold">
-      <router-link class="hover:text-white" to="/">Comic</router-link>
+      <router-link class="hover:text-primary-lighter" to="/">Comic</router-link>
       <span class="px-2 text-gray-600">|</span>
-      <router-link class="hover:text-white" to="/sketches"
-        >Sketches</router-link
+      <a
+        class="hover:text-primary-lighter"
+        href="https://www.fenrispublishing.com/order.php?r=g&s=foxes"
+        target="_blank"
+        >Store</a
       >
-      <span class="px-2 text-gray-600">|</span>
-      <router-link class="hover:text-white relative group" to="/lore"
-        >Lore
-        <!--        <span-->
-        <!--          class="absolute top-0 right-0 inline-block h-2 w-2 -mt-0.5 -mr-1.5 rounded-full bg-pink-800 group-hover:bg-white"-->
-        <!--        ></span>-->
-      </router-link>
     </div>
   </nav>
 </template>
