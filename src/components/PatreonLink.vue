@@ -6,7 +6,7 @@
       href="https://www.patreon.com/foxesinlove"
       @click="patreonClick"
       target="_blank"
-      class="inline-block py-2 px-3 bg-patreon-lighter text-white rounded text-xs sm:text-sm hover:ring-2 hover:ring-patreon-lighter hover:ring-offset-2 hover:ring-offset-gray-200 active:bg-gray-700"
+      class="inline-block py-3 px-4 bg-patreon-lighter text-white rounded text-sm sm:text-lg hover:ring-2 hover:ring-patreon-lighter hover:ring-offset-2 hover:ring-offset-gray-200 active:bg-gray-700"
     >
       <svg
         class="fill-current inline-block w-4 h-4 align-middle"
@@ -21,11 +21,23 @@
       </svg>
       Become a Patron
     </a>
+    <a
+      href="https://www.fenrispublishing.com/fil"
+      @click="storeClick"
+      target="_blank"
+      class="inline-block mt-2 py-3 px-4 bg-primary text-white rounded text-sm sm:mt-0 sm:ml-3 sm:text-lg hover:ring-2 hover:ring-primary-lighter hover:ring-offset-2 hover:ring-offset-gray-200 active:bg-gray-700"
+    >
+      <img
+        class="inline-block -mt-2 -mb-1 w-7"
+        src="@/assets/fplogo-small.png"
+      />
+      Store</a
+    >
     <span
       class="text-primary font-semibold inline-block animated bounceIn delay-1s text-sm mt-2 sm:mt-0 sm:ml-2 sm:text-base"
     >
       <svg
-        class="fill-current w-5 h-5 mx-1 align-text-top hidden sm:inline-block"
+        class="fill-current w-5 h-5 mx-1 hidden sm:inline-block"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
       >
@@ -45,6 +57,10 @@ export default {
     patreonClick() {
       // eslint-disable-next-line no-undef
       gtag('event', 'Patreon', { event_category: 'Social' })
+    },
+    storeClick() {
+      // eslint-disable-next-line no-undef
+      gtag('event', 'Store', { event_category: 'Social' })
     },
   },
 }

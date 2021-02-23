@@ -22,6 +22,10 @@ module.exports = {
           DEFAULT: '#5b80bd',
           lighter: '#8099c2',
         },
+        tumblr: {
+          DEAFULT: '#001936',
+          lighter: '#005bbf',
+        },
         discord: {
           DEFAULT: '#7289da',
           lighter: '#99aab5',

@@ -1,8 +1,11 @@
 <template>
   <div class="h-full">
-    <header class="relative text-center mx-auto">
+    <header
+      class="relative bg-white container mx-auto flex flex-col items-center"
+      style="max-width: 900px"
+    >
       <img
-        class="w-screen"
+        class="h-full w-full"
         src="./assets/title_banner.png"
         alt="Foxes in Love"
       />
@@ -21,7 +24,7 @@
     <div
       id="top"
       ref="top"
-      class="container mx-auto flex flex-col items-center justify-between w-full h-full"
+      class="container bg-white mx-auto flex flex-col items-center justify-between w-full h-full"
       style="max-width: 900px"
     >
       <site-nav></site-nav>

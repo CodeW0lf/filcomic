@@ -23,14 +23,14 @@
       or visit the
       <a
         class="text-primary hover:text-primary-lighter font-bold"
-        href="https://www.fenrispublishing.com/order.php?r=g&s=foxes"
+        href="https://www.fenrispublishing.com/fil"
         target="_blank"
         >Store</a
       >!
     </p>
     <p class="mt-8 mb-4">
-      Copyright &copy; {{ new Date().getFullYear() }} Foxes in Love. All rights
-      reserved.
+      Copyright &copy; {{ new Date().getFullYear() }} Toivo Kaartinen. All
+      rights reserved.
     </p>
   </div>
 </template>

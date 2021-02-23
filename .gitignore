@@ -22,3 +22,4 @@ yarn-error.log*
 *.sw*
 /public/img/sketch_files/
 /public/patreon/
+/public/img/
